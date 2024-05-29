@@ -6,6 +6,10 @@ public class SalariedEmployee extends Employee {
 
   private double salary;
 
+  public SalariedEmployee() {
+
+  }
+
   public SalariedEmployee(String name, LocalDate hireDate) {
     super(name, hireDate);
     //register401k()

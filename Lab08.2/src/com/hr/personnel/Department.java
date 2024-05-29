@@ -66,8 +66,7 @@ public class Department {
       // "downcast" the Employee reference to more specific SalariedEmployee
       // then we can call salaried employee specific methods i.e takeVacation()
       if (employees[i] instanceof SalariedEmployee) {
-        SalariedEmployee semp = (SalariedEmployee) employees[i];
-        semp.takeVacation();
+        ((SalariedEmployee) employees[i]).takeVacation();
       }
     }
   }

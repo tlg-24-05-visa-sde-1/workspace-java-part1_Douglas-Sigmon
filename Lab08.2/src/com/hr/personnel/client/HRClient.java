@@ -10,6 +10,7 @@ package com.hr.personnel.client;
 
 import com.hr.personnel.Department;
 import com.hr.personnel.Employee;
+import com.hr.personnel.Executive;
 import com.hr.personnel.HourlyEmployee;
 import com.hr.personnel.SalariedEmployee;
 import java.time.LocalDate;
@@ -27,8 +28,11 @@ class HRClient {
     // add Employees to it
     dept.addEmployee(new SalariedEmployee("Jason", LocalDate.of(1990, 8, 24), 35000.00));
     dept.addEmployee(new HourlyEmployee("Julie", LocalDate.of(2000, 2, 2), 19, 40));
-    dept.addEmployee(new SalariedEmployee("Douglas", LocalDate.of(2008, 8, 24), 70000.00));
+
+    dept.addEmployee(new SalariedEmployee("Sam", LocalDate.of(2008, 8, 24), 70000.00));
     dept.addEmployee(new HourlyEmployee("Ana", LocalDate.of(2015, 2, 2), 33.65, 80.00));
+
+    dept.addEmployee(new Executive("Douglas", LocalDate.of(2008,2,2), 1_500_000.00));
 
     // list its Employees
     System.out.println("\nList employees:");
@@ -46,5 +50,6 @@ class HRClient {
 
     System.out.println("\nHoliday Break:");
     dept.holidayBreak();
+
   }
 }
