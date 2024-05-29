@@ -50,6 +50,7 @@ public class HourlyEmployee extends Employee {
         getRate() * getHours() * HOURLY_TAX_RATE);
   }
 
+
   @Override
   public String toString() {
     return String.format(super.toString() + ", rate: %.2f, hours: %.2f \n", rate, hours);

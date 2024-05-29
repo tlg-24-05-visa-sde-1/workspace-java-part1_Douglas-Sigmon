@@ -12,4 +12,9 @@ public class Executive extends SalariedEmployee {
   public void work() {
     System.out.println(getName() + " Why work when you can Golf? ");
   }
+
+  @Override
+  public void fileReturn() {
+    System.out.println("Return Filed Electronically");
+  }
 }
