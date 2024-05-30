@@ -9,6 +9,7 @@
 package com.hr.corp;
 
 import gov.irs.TaxPayer;
+import org.w3c.dom.ls.LSOutput;
 
 /**
  * Corporate entity - also pays taxes.
@@ -27,9 +28,15 @@ public class Corporation implements TaxPayer {
   }
 
   @Override
+  public double getStandardDeduction() {
+    return DEFAULT_STANDARD_DEDUCTION*10;
+  }
+
+  @Override
   public void fileReturn() {
     System.out.println("Return not filed, we sent our lawyers instead");
   }
+
 
   public String getName() {
     return name;
