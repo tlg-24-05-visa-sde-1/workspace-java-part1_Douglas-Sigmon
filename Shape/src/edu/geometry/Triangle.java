@@ -26,7 +26,7 @@ public class Triangle implements Shape {
 
   @Override
   public double getArea() {
-    return 1/2.0*getSide1()*getSide2()*Math.sin(getAngle());
+    return 1/2.0*getSide1()*getSide2()*Math.sin(Math.toRadians(getAngle()));
   }
 
   @Override

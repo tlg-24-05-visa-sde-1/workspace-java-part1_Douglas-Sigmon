@@ -19,7 +19,7 @@ import java.util.Collection;
 public class IRS {
 
   // what types of objects can this array contain?
-  private final Collection<TaxPayer> payers = new ArrayList<TaxPayer>();
+  private final Collection<TaxPayer> payers = new ArrayList<>();
   private int currentIndex = 0;  // for dealing with the array
 
   public void collectTaxes() {
